@@ -518,7 +518,7 @@ function initailMarkerDay1() {
         LatLng : new google.maps.LatLng(35.169442, 136.904819),
         iconColor : 'blue-dot',
         title: '名古屋国際ホテル',
-        infoContent : makeInfoWindowContent({ Class: 'primary', Header:'名古屋国際ホテル', Body:'<div class="StreetView" />', Footer : '〒460-0003 名古屋市中区錦3-23-3'})
+        infoContent : makeInfoWindowContent({ Class: 'primary', Header:'名古屋国際ホテル（A.B.D車）', Body:'<div class="StreetView" />', Footer : '〒460-0003 名古屋市中区錦3-23-3'})
     });
 
     // 名古屋觀光
@@ -527,7 +527,7 @@ function initailMarkerDay1() {
         LatLng : new google.maps.LatLng(35.168767, 136.895367),
         iconColor : 'blue-dot',
         title: '名古屋観光ホテル',
-        infoContent : makeInfoWindowContent({Class: 'primary', Header:'名古屋観光ホテル', Body:'<div class="StreetView" />', Footer : '〒460-8608 名古屋市中区錦一丁目19-30'})
+        infoContent : makeInfoWindowContent({Class: 'primary', Header:'名古屋観光ホテル（C車）', Body:'<div class="StreetView" />', Footer : '〒460-8608 名古屋市中区錦一丁目19-30'})
     });
 
     // 機場到飯店
@@ -548,7 +548,7 @@ function initailMarkerDay2() {
         LatLng : new google.maps.LatLng(36.763555, 137.876894),
         iconColor : 'red-dot',
         title: '白馬アルプスホテル',
-        infoContent : makeInfoWindowContent({Class: 'danger', Header:'白馬アルプスホテル', Body:'<div class="StreetView" />', Footer : '〒399-9422長野県北安曇郡小谷村白馬乗鞍高原'})
+        infoContent : makeInfoWindowContent({Class: 'danger', Header:'白馬アルプスホテル（B.C.D車）', Body:'<div class="StreetView" />', Footer : '〒399-9422長野県北安曇郡小谷村白馬乗鞍高原'})
     });
 
     // 白馬姆池飯店
@@ -557,7 +557,7 @@ function initailMarkerDay2() {
         LatLng : new google.maps.LatLng(36.749506, 137.871613),
         iconColor : 'red-dot',
         title: '栂池高原ホテル',
-        infoContent : makeInfoWindowContent({Class: 'danger', Header:'栂池高原ホテル', Body:'<div class="StreetView" />', Footer : '〒399-9422 長野県北安曇郡小谷村 千国乙12840-1'})
+        infoContent : makeInfoWindowContent({Class: 'danger', Header:'栂池高原ホテル（A車）', Body:'<div class="StreetView" />', Footer : '〒399-9422 長野県北安曇郡小谷村 千国乙12840-1'})
     });
 
     // （有）光伸真珠 名古屋支店
@@ -566,7 +566,7 @@ function initailMarkerDay2() {
         LatLng : new google.maps.LatLng(35.175504, 136.872646),
         iconColor : 'red-pushpin',
         title: '（有）光伸真珠 名古屋支店',
-        infoContent : makeInfoWindowContent({Class: 'danger', Header:'（有）光伸真珠 名古屋支店', Body:'<div class="StreetView" />', Footer : '〒453-0017 名古屋市中村区則武本通1-39 光伸名古屋ビル'})
+        infoContent : makeInfoWindowContent({Class: 'danger', Header:'（有）光伸真珠 名古屋支店（停留約30-60分鐘）', Body:'<div class="StreetView" />', Footer : '〒453-0017 名古屋市中村区則武本通1-39 光伸名古屋ビル'})
     });
 
     // 妻籠宿
@@ -575,7 +575,7 @@ function initailMarkerDay2() {
         LatLng : new google.maps.LatLng(35.577340, 137.595665),
         iconColor : 'red-pushpin',
         title: '妻籠宿',
-        infoContent : makeInfoWindowContent({Class: 'danger', Header:'妻籠宿', Body:'<div class="StreetView" />', Footer : '〒399-5302 長野県木曽郡南木曽町吾妻2159-2'})
+        infoContent : makeInfoWindowContent({Class: 'danger', Header:'妻籠宿（+馬籠宿，停留約60分鐘）', Body:'<div class="StreetView" />', Footer : '〒399-5302 長野県木曽郡南木曽町吾妻2159-2'})
     });
 
     // 馬龍宿
@@ -584,7 +584,7 @@ function initailMarkerDay2() {
         LatLng : new google.maps.LatLng(35.528611, 137.569869),
         iconColor : 'red-pushpin',
         title: '馬籠宿',
-        infoContent : makeInfoWindowContent({Class: 'danger', Header:'馬籠宿', Body:'<div class="StreetView" />', Footer : '〒508-0502 岐阜県中津川市馬籠4300-1'})
+        infoContent : makeInfoWindowContent({Class: 'danger', Header:'馬籠宿（+妻籠宿，停留約60分鐘）', Body:'<div class="StreetView" />', Footer : '〒508-0502 岐阜県中津川市馬籠4300-1'})
     });
 
     // 松本市美術館
@@ -593,7 +593,7 @@ function initailMarkerDay2() {
         LatLng : new google.maps.LatLng(36.231659, 137.976178),
         iconColor : 'red-pushpin',
         title: '松本市美術館',
-        infoContent : makeInfoWindowContent({Class: 'danger', Header:'松本市美術館', Body:'<div class="StreetView" />', Footer : '〒390-0811 長野県松本市中央4丁目2-22'})
+        infoContent : makeInfoWindowContent({Class: 'danger', Header:'松本市美術館（停留約70分鐘）', Body:'<div class="StreetView" />', Footer : '〒390-0811 長野県松本市中央4丁目2-22'})
     });
 
     // [名古屋国際ホテル] 到 [（有）光伸真珠 名古屋支店]
@@ -603,7 +603,7 @@ function initailMarkerDay2() {
         color: '#C12E2A',
         title: '[名古屋国際ホテル] 到 [（有）光伸真珠 名古屋支店]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[名古屋国際ホテル] 到 [（有）光伸真珠 名古屋支店]</div><div>車程約25分</div>'
+        infoContent : '<div>[名古屋国際ホテル] 到 [（有）光伸真珠 名古屋支店]</div><div>車程約25分鐘</div>'
       });
 
     // [（有）光伸真珠 名古屋支店] 到 [妻籠宿]
@@ -613,7 +613,7 @@ function initailMarkerDay2() {
         color: '#C12E2A',
         title: '[（有）光伸真珠 名古屋支店] 到 [妻籠宿]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[（有）光伸真珠 名古屋支店] 到 [妻籠宿]</div><div>車程約110分</div>'
+        infoContent : '<div>[（有）光伸真珠 名古屋支店] 到 [妻籠宿]</div><div>車程約110分鐘</div>'
       });
 
     // [馬龍宿] 到 [松本市美術館]
@@ -623,7 +623,7 @@ function initailMarkerDay2() {
         color: '#C12E2A',
         title: '[馬龍宿] 到 [松本市美術館]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[馬龍宿] 到 [松本市美術館]</div><div>車程約120分</div>'
+        infoContent : '<div>[馬龍宿] 到 [松本市美術館]</div><div>車程約120分鐘</div>'
       });
 
     // [松本市美術館] 到 [白馬阿爾卑斯山酒店]
@@ -633,7 +633,7 @@ function initailMarkerDay2() {
         color: '#C12E2A',
         title: '[松本市美術館] 到 [白馬阿爾卑斯山酒店]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[松本市美術館] 到 [白馬阿爾卑斯山酒店]</div><div>車程約80分</div>'
+        infoContent : '<div>[松本市美術館] 到 [白馬阿爾卑斯山酒店]</div><div>車程約70分</div>'
       });
 }
 
@@ -644,7 +644,7 @@ function initailMarkerDay3() {
         LatLng : new google.maps.LatLng(36.580055, 136.643628),
         iconColor : 'green-dot',
         title: 'ホテルマイステイズ金沢',
-        infoContent : makeInfoWindowContent({Class: 'success', Header:'ホテルマイステイズ金沢', Body:'<div class="StreetView" />', Footer : '〒920-0031 石川県金沢市広岡2-13-5'})
+        infoContent : makeInfoWindowContent({Class: 'success', Header:'ホテルマイステイズ金沢（A.B.C.D車）', Body:'<div class="StreetView" />', Footer : '〒920-0031 石川県金沢市広岡2-13-5'})
     });
 
     // 立山駅
@@ -727,7 +727,7 @@ function initailMarkerDay3() {
         color: '#419641',
         title: '[立山ケーブルカー] 到 [美女平駅]',
         infoCss: 'alert alert-success',
-        infoContent : '<div>[立山ケーブルカー] 到 [美女平駅]</div><div>車程約7分</div>'
+        infoContent : '<div>[立山ケーブルカー] 到 [美女平駅]</div><div>車程約7分鐘</div>'
       });
     // [美女平駅] 到 [室堂駅]
     _polylineBijodairaToMurodo = makePolyline({
@@ -736,7 +736,7 @@ function initailMarkerDay3() {
         color: '#419641',
         title: '[美女平駅] 到 [室堂駅]',
         infoCss: 'alert alert-success',
-        infoContent : '<div>[美女平駅] 到 [室堂駅]</div><div>車程約50分</div>'
+        infoContent : '<div>[美女平駅] 到 [室堂駅]</div><div>車程約50分鐘</div>'
       });
       // [室堂駅] 到 [大観峰駅]
     _polylineMurodoToDaikanbo = makePolyline({
@@ -745,7 +745,7 @@ function initailMarkerDay3() {
         color: '#419641',
         title: '[室堂駅] 到 [大観峰駅]',
         infoCss: 'alert alert-success',
-        infoContent : '<div>[室堂駅] 到 [大観峰駅]</div><div>車程約10分</div>'
+        infoContent : '<div>[室堂駅] 到 [大観峰駅]</div><div>車程約10分鐘</div>'
       });
       // [大観峰駅] 到 [黒部平駅]
     _polylineDaikanboToKurobedaira = makePolyline({
@@ -754,7 +754,7 @@ function initailMarkerDay3() {
         color: '#419641',
         title: '[大観峰駅] 到 [黒部平駅]',
         infoCss: 'alert alert-success',
-        infoContent : '<div>[大観峰駅] 到 [黒部平駅]</div><div>車程約10分</div>'
+        infoContent : '<div>[大観峰駅] 到 [黒部平駅]</div><div>車程約10分鐘</div>'
       });
       // [黒部平駅] 到 [黒部湖駅]
     _polylineKurobedairaToKurobeko = makePolyline({
@@ -763,7 +763,7 @@ function initailMarkerDay3() {
         color: '#419641',
         title: '[黒部平駅] 到 [黒部湖駅]',
         infoCss: 'alert alert-success',
-        infoContent : '<div>[黒部平駅] 到 [黒部湖駅]</div><div>車程約5分</div>'
+        infoContent : '<div>[黒部平駅] 到 [黒部湖駅]</div><div>車程約5分鐘</div>'
       });
       // [黒部湖駅] 到 [黒部ダム]
     _polylineKurobekoToKurobedamu = makePolyline({
@@ -772,7 +772,7 @@ function initailMarkerDay3() {
         color: '#419641',
         title: '[黒部湖駅] 到 [黒部ダム]',
         infoCss: 'alert alert-success',
-        infoContent : '<div>[黒部湖駅] 到 [黒部ダム]</div><div>徒步約15分</div>'
+        infoContent : '<div>[黒部湖駅] 到 [黒部ダム]</div><div>徒步約15分鐘</div>'
       });
       // [黒部ダム駅] 到 [扇澤駅]
     _polylineKurobedamuStationToOgizawa = makePolyline({
@@ -781,7 +781,7 @@ function initailMarkerDay3() {
         color: '#419641',
         title: '[黒部ダム駅] 到 [扇澤駅]',
         infoCss: 'alert alert-success',
-        infoContent : '<div>[黒部ダム駅] 到 [扇澤駅]</div><div>車程約16分</div>'
+        infoContent : '<div>[黒部ダム駅] 到 [扇澤駅]</div><div>車程約16分鐘</div>'
       });
 }
 
@@ -792,7 +792,7 @@ function initailMarkerDay4() {
         LatLng : new google.maps.LatLng(36.137932, 137.247650),
         iconColor : 'yellow-dot',
         title: '高山グリーンホテル',
-        infoContent : makeInfoWindowContent({Class: 'warning', Header:'高山グリーンホテル', Body:'<div class="StreetView" />', Footer : '〒506-0031 岐阜県高山市西之一色町2-180'})
+        infoContent : makeInfoWindowContent({Class: 'warning', Header:'高山グリーンホテル（C.D車）', Body:'<div class="StreetView" />', Footer : '〒506-0031 岐阜県高山市西之一色町2-180'})
     });
     // 高山ASSOCIA
     _markerDay4AssociaTakayamaResort = makeMarker({
@@ -800,7 +800,7 @@ function initailMarkerDay4() {
         LatLng : new google.maps.LatLng(36.122820, 137.243658),
         iconColor : 'yellow-dot',
         title: 'ホテルアソシア高山リゾート',
-        infoContent : makeInfoWindowContent({Class: 'warning', Header:'ホテルアソシア高山リゾート', Body:'<div class="StreetView" />', Footer : '〒506-0033 岐阜県高山市越後町1134'})
+        infoContent : makeInfoWindowContent({Class: 'warning', Header:'ホテルアソシア高山リゾート（A.B車）', Body:'<div class="StreetView" />', Footer : '〒506-0033 岐阜県高山市越後町1134'})
     });
     // 兼六園
     _markerDay4Kenrokuen = makeMarker({
@@ -808,7 +808,7 @@ function initailMarkerDay4() {
         LatLng : new google.maps.LatLng(36.562231, 136.662651),
         iconColor : 'ylw-pushpin',
         title: '兼六園',
-        infoContent : makeInfoWindowContent({Class: 'warning', Header:'兼六園', Body:'<div class="StreetView" />', Footer : '〒920-0937 石川県金沢市丸の内1番1号'})
+        infoContent : makeInfoWindowContent({Class: 'warning', Header:'兼六園（停留約120分鐘）', Body:'<div class="StreetView" />', Footer : '〒920-0937 石川県金沢市丸の内1番1号'})
     });
     // ひがし茶屋街
     _markerDay4Higashi = makeMarker({
@@ -816,7 +816,7 @@ function initailMarkerDay4() {
         LatLng : new google.maps.LatLng(36.572677, 136.666515),
         iconColor : 'ylw-pushpin',
         title: 'ひがし茶屋街',
-        infoContent : makeInfoWindowContent({Class: 'warning', Header:'ひがし茶屋街', Body:'<div class="StreetView" />', Footer : '〒920-0858 金沢市木ノ新保町１番１号'})
+        infoContent : makeInfoWindowContent({Class: 'warning', Header:'ひがし茶屋街（停留約30分鐘）', Body:'<div class="StreetView" />', Footer : '〒920-0858 金沢市木ノ新保町１番１号'})
     });
     // 合掌村
     _markerDay4Gasshou = makeMarker({
@@ -824,7 +824,7 @@ function initailMarkerDay4() {
         LatLng : new google.maps.LatLng(36.256532, 136.905260),
         iconColor : 'ylw-pushpin',
         title: '白川郷·五箇山の合掌造り集落',
-        infoContent : makeInfoWindowContent({Class: 'warning', Header:'合掌村', Body:'<div class="StreetView" />', Footer : '〒501-5692 岐阜県大野郡白川村鳩谷517'})
+        infoContent : makeInfoWindowContent({Class: 'warning', Header:'合掌村（停留約150分鐘）', Body:'<div class="StreetView" />', Footer : '〒501-5692 岐阜県大野郡白川村鳩谷517'})
     });
 
     // [HOTEL MYSTAYS 金澤] 到 [兼六園]
@@ -834,7 +834,7 @@ function initailMarkerDay4() {
         color: '#EB9316',
         title: '[HOTEL MYSTAYS 金澤] 到 [兼六園]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[HOTEL MYSTAYS 金澤] 到 [兼六園]</div><div>車程約10分</div>'
+        infoContent : '<div>[HOTEL MYSTAYS 金澤] 到 [兼六園]</div><div>車程約10分鐘</div>'
       });
 
     // [兼六園] 到 [ひがし茶屋街]
@@ -844,7 +844,7 @@ function initailMarkerDay4() {
         color: '#EB9316',
         title: '[兼六園] 到 [ひがし茶屋街]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[兼六園] 到 [ひがし茶屋街]</div><div>車程約12分</div>'
+        infoContent : '<div>[兼六園] 到 [ひがし茶屋街]</div><div>車程約12分鐘</div>'
       });
 
     // [ひがし茶屋街] 到 [白川郷·五箇山の合掌造り集落]
@@ -854,7 +854,7 @@ function initailMarkerDay4() {
         color: '#EB9316',
         title: '[ひがし茶屋街] 到 [白川郷·五箇山の合掌造り集落]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[ひがし茶屋街] 到 [白川郷·五箇山の合掌造り集落]</div><div>車程約70分</div>'
+        infoContent : '<div>[ひがし茶屋街] 到 [白川郷·五箇山の合掌造り集落]</div><div>車程約70分鐘</div>'
       });
 
       // [白川郷·五箇山の合掌造り集落] 到 [高山グリーンホテル]
@@ -864,7 +864,7 @@ function initailMarkerDay4() {
         color: '#EB9316',
         title: '[白川郷·五箇山の合掌造り集落] 到 [高山グリーンホテル]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[白川郷·五箇山の合掌造り集落] 到 [高山グリーンホテル]</div><div>車程約55分</div>'
+        infoContent : '<div>[白川郷·五箇山の合掌造り集落] 到 [高山グリーンホテル]</div><div>車程約55分鐘</div>'
       });
 }
 
@@ -875,7 +875,7 @@ function initailMarkerDay5() {
         LatLng : new google.maps.LatLng(36.143853, 137.258320),
         iconColor : 'ltblu-pushpin',
         title: '宮川朝市',
-        infoContent : makeInfoWindowContent({Class: 'info', Header:'宮川朝市', Body:'<div class="StreetView" />', Footer : '〒506-0841 岐阜県高山市下三之町宮川沿い'})
+        infoContent : makeInfoWindowContent({Class: 'info', Header:'宮川朝市（停留約30分鐘）', Body:'<div class="StreetView" />', Footer : '〒506-0841 岐阜県高山市下三之町宮川沿い'})
     });
     // 上三之町
     _markerDay5Stree = makeMarker({
@@ -883,7 +883,7 @@ function initailMarkerDay5() {
         LatLng : new google.maps.LatLng(36.141302, 137.259622),
         iconColor : 'ltblu-pushpin',
         title: '上三之町',
-        infoContent : makeInfoWindowContent({Class: 'info', Header:'上三之町', Body:'<div class="StreetView" />', Footer : '〒506-0846 岐阜県高山市上三之町'})
+        infoContent : makeInfoWindowContent({Class: 'info', Header:'上三之町（停留約60分鐘）', Body:'<div class="StreetView" />', Footer : '〒506-0846 岐阜県高山市上三之町'})
     });
     // 美濃古街
     _markerDay5Mino = makeMarker({
@@ -891,7 +891,7 @@ function initailMarkerDay5() {
         LatLng : new google.maps.LatLng(35.546654, 136.913284),
         iconColor : 'ltblu-pushpin',
         title: '美濃古街',
-        infoContent : makeInfoWindowContent({Class: 'info', Header:'美濃古街', Body:'<div class="StreetView" />', Footer : '〒501-3792 岐阜縣美濃市美濃市1350'})
+        infoContent : makeInfoWindowContent({Class: 'info', Header:'美濃古街（停留約50分鐘）', Body:'<div class="StreetView" />', Footer : '〒501-3792 岐阜縣美濃市美濃市1350'})
     });
 
     // [高山グリーンホテル] 到 [宮川朝市]
@@ -901,7 +901,7 @@ function initailMarkerDay5() {
         color: '#23527C',
         title: '[高山グリーンホテル] 到 [宮川朝市]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[高山グリーンホテル] 到 [宮川朝市]</div><div>車程約5分</div>'
+        infoContent : '<div>[高山グリーンホテル] 到 [宮川朝市]</div><div>車程約5分鐘</div>'
       });
 
       // [宮川朝市] 到 [上三之町]
@@ -911,7 +911,7 @@ function initailMarkerDay5() {
         color: '#23527C',
         title: '[宮川朝市] 到 [上三之町]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[宮川朝市] 到 [上三之町]</div><div>車程約5分</div>'
+        infoContent : '<div>[宮川朝市] 到 [上三之町]</div><div>車程約5分鐘</div>'
       });
 
     // [上三之町] 到 [美濃古街]
@@ -921,7 +921,7 @@ function initailMarkerDay5() {
         color: '#23527C',
         title: '[上三之町] 到 [美濃古街]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[上三之町] 到 [美濃古街]</div><div>車程約108分</div>'
+        infoContent : '<div>[上三之町] 到 [美濃古街]</div><div>車程約108分鐘</div>'
       });
 
     // [美濃古街] 到 [機場]
@@ -931,7 +931,7 @@ function initailMarkerDay5() {
         color: '#23527C',
         title: '[美濃古街] 到 [機場]',
         infoCss: 'alert alert-danger',
-        infoContent : '<div>[美濃古街] 到 [機場]</div><div>車程約55分</div>'
+        infoContent : '<div>[美濃古街] 到 [機場]</div><div>車程約55分鐘</div>'
       });
 }
 
