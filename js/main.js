@@ -110,6 +110,15 @@ var _markerZeroGate;                       // ZERO GATE
 $(function() {
     $('#side-menu').metisMenu();
 
+    $(window).bind("load resize", function() {
+        width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
+        if (width < 768) {
+            $('div.navbar-collapse').addClass('collapse');
+        } else {
+            $('div.navbar-collapse').removeClass('collapse');
+        }
+    });
+
     // 飯店
     $('.hotel').on('click', function(e){
         $(this).find('button').click();
@@ -448,18 +457,31 @@ function mapInitialize() {
         windSpeedUnits: google.maps.weather.WindSpeedUnit.METERS_PER_SECOND
       });
 
-     var mailLink = document.createElement('a');
-     $(mailLink).attr('alt', '寫信給 Tericky')
-                .attr('title', '寫信給 Tericky')
-                .attr('href', 'mailto:tericky@gis.tw?Subject=我想要加入XXX景點、XXX商店')
-                .attr('data-toggle', 'tooltip')
-                .attr('data-placement', 'left')
-                .css('marginTop', '11px')
-                .addClass('btn btn-danger btn-circle btn-lg')
+    var menuCollapse = document.createElement('button');
+    $(menuCollapse).attr('alt', '顯示/隱藏 選單')
+                   .attr('title', '顯示/隱藏 選單')
+                   .attr('data-toggle', 'collapse')
+                   .attr('data-target', '.navbar-collapse')
+                   .attr('data-placement', 'right')
+                   .css('marginLeft', '10px')
+                   .addClass('btn btn-primary btn-circle btn-lg navbar-toggle')
+                   .append($('<i class="fa fa-list">'))
+                   .tooltip();
+    menuCollapse.index = 1;
+    __map.controls[google.maps.ControlPosition.LEFT_TOP].push(menuCollapse);
+
+    var mailLink = document.createElement('a');
+    $(mailLink).attr('alt', '寫信給 Tericky')
+               .attr('title', '寫信給 Tericky')
+               .attr('href', 'mailto:tericky@gis.tw?Subject=我想要加入XXX景點、XXX商店')
+               .attr('data-toggle', 'tooltip')
+               .attr('data-placement', 'left')
+               .css('marginTop', '11px')
+               .addClass('btn btn-danger btn-circle btn-lg')
                .append($('<i class="fa fa-envelope">'))
                .tooltip();
-    mailLink.index = 1;
-      __map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(mailLink);
+    mailLink.index = 2;
+    __map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(mailLink);
 
     var weatherBtn = document.createElement('button');
     $(weatherBtn).attr('alt', '顯示/隱藏 天氣資訊')
@@ -472,7 +494,7 @@ function mapInitialize() {
                      __weather.setMap(__weather.getMap() === null ? __map : null);
                  })
                  .tooltip();
-    weatherBtn.index = 2;
+    weatherBtn.index = 3;
     __map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(weatherBtn);
 
     initailMarkerDay1();
