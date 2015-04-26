@@ -109,13 +109,23 @@ var _markerZeroGate;                       // ZERO GATE
 
 $(function() {
     $('#side-menu').metisMenu();
+    $('div.navbar-collapse').addClass('collapse');
 
     $(window).bind("load resize", function() {
-        width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
-        if (width < 768) {
-            $('div.navbar-collapse').addClass('collapse');
+        var width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
+        if(width < 768) {
+            $('.navbar-toggle').show();
+
+            return;
+        }
+
+        var height = (this.window.innerHeight > 0) ? this.window.innerHeight : this.screen.height;
+        if (height <= 350) {
+            $('div.navbar-collapse').collapse('hide');
+            $('.navbar-toggle').show();
         } else {
-            $('div.navbar-collapse').removeClass('collapse');
+            $('div.navbar-collapse').collapse('show');
+            $('.navbar-toggle').hide();
         }
     });
 
@@ -462,13 +472,13 @@ function mapInitialize() {
                    .attr('title', '顯示/隱藏 選單')
                    .attr('data-toggle', 'collapse')
                    .attr('data-target', '.navbar-collapse')
-                   .attr('data-placement', 'right')
-                   .css('marginLeft', '10px')
+                   .attr('data-placement', 'left')
+                   .css('margin-right', '0px')
                    .addClass('btn btn-primary btn-circle btn-lg navbar-toggle')
                    .append($('<i class="fa fa-list">'))
                    .tooltip();
     menuCollapse.index = 1;
-    __map.controls[google.maps.ControlPosition.LEFT_TOP].push(menuCollapse);
+    __map.controls[google.maps.ControlPosition.RIGHT_TOP].push(menuCollapse);
 
     var mailLink = document.createElement('a');
     $(mailLink).attr('alt', '寫信給 Tericky')
@@ -1336,77 +1346,77 @@ function initialStores() {
 }
 
 function initialMeals() {
-	$('#aMealsDay1').popover({
-		content:'<table class="table table-condensed table-bordered table-hover" style="margin-bottom: 0px">\
-					<tbody>\
-						<tr><th nowrap>早餐</th><td nowrap>活力營養早餐</td></tr>\
-						<tr><th nowrap>午餐</th><td nowrap>機上套餐</td></tr>\
-						<tr><th nowrap>晚餐</th><td nowrap>自理</td></tr>\
-					</tbody>\
-				</table>',
-		html: true,
-		trigger: 'focus'
-	}).on('click', function(e){
+    $('#aMealsDay1').popover({
+        content:'<table class="table table-condensed table-bordered table-hover" style="margin-bottom: 0px">\
+                    <tbody>\
+                        <tr><th nowrap>早餐</th><td nowrap>活力營養早餐</td></tr>\
+                        <tr><th nowrap>午餐</th><td nowrap>機上套餐</td></tr>\
+                        <tr><th nowrap>晚餐</th><td nowrap>自理</td></tr>\
+                    </tbody>\
+                </table>',
+        html: true,
+        trigger: 'focus'
+    }).on('click', function(e){
         e.preventDefault();
         return false;
     });
 
-	$('#aMealsDay2').popover({
-		content:'<table class="table table-condensed table-bordered table-hover" style="margin-bottom: 0px">\
-					<tbody>\
-						<tr><th nowrap>早餐</th><td nowrap>飯店內享用</td></tr>\
-						<tr><th nowrap>午餐</th><td nowrap>妻籠宿鄉土風味御膳</td></tr>\
-						<tr><th nowrap>晚餐</th><td nowrap>自助式燒肉吃到飽+飲料暢飲</td></tr>\
-					</tbody>\
-				</table>',
-		html: true,
-		trigger: 'focus'
-	}).on('click', function(e){
+    $('#aMealsDay2').popover({
+        content:'<table class="table table-condensed table-bordered table-hover" style="margin-bottom: 0px">\
+                    <tbody>\
+                        <tr><th nowrap>早餐</th><td nowrap>飯店內享用</td></tr>\
+                        <tr><th nowrap>午餐</th><td nowrap>妻籠宿鄉土風味御膳</td></tr>\
+                        <tr><th nowrap>晚餐</th><td nowrap>自助式燒肉吃到飽+飲料暢飲</td></tr>\
+                    </tbody>\
+                </table>',
+        html: true,
+        trigger: 'focus'
+    }).on('click', function(e){
         e.preventDefault();
         return false;
     });
 
-	$('#aMealsDay3').popover({
-		content:'<table class="table table-condensed table-bordered table-hover" style="margin-bottom: 0px">\
-					<tbody>\
-						<tr><th nowrap>早餐</th><td nowrap>飯店內享用</td></tr>\
-						<tr><th nowrap>午餐</th><td nowrap>立山風味餐</td></tr>\
-						<tr><th nowrap>晚餐</th><td nowrap>柿の匠海鮮鍋物料理</td></tr>\
-					</tbody>\
-				</table>',
-		html: true,
-		trigger: 'focus'
-	}).on('click', function(e){
+    $('#aMealsDay3').popover({
+        content:'<table class="table table-condensed table-bordered table-hover" style="margin-bottom: 0px">\
+                    <tbody>\
+                        <tr><th nowrap>早餐</th><td nowrap>飯店內享用</td></tr>\
+                        <tr><th nowrap>午餐</th><td nowrap>立山風味餐</td></tr>\
+                        <tr><th nowrap>晚餐</th><td nowrap>柿の匠海鮮鍋物料理</td></tr>\
+                    </tbody>\
+                </table>',
+        html: true,
+        trigger: 'focus'
+    }).on('click', function(e){
         e.preventDefault();
         return false;
     });
 
-	$('#aMealsDay4').popover({
-		content:'<table class="table table-condensed table-bordered table-hover" style="margin-bottom: 0px">\
-					<tbody>\
-						<tr><th nowrap>早餐</th><td nowrap>飯店內享用</td></tr>\
-						<tr><th nowrap>午餐</th><td nowrap>飛驒牛朴葉味熷燒御膳</td></tr>\
-						<tr><th nowrap>晚餐</th><td nowrap>日式迎賓會席料理+卡拉OK歡唱</td></tr>\
-					</tbody>\
-				</table>',
-		html: true,
-		trigger: 'focus'
-	}).on('click', function(e){
+    $('#aMealsDay4').popover({
+        content:'<table class="table table-condensed table-bordered table-hover" style="margin-bottom: 0px">\
+                    <tbody>\
+                        <tr><th nowrap>早餐</th><td nowrap>飯店內享用</td></tr>\
+                        <tr><th nowrap>午餐</th><td nowrap>飛驒牛朴葉味熷燒御膳</td></tr>\
+                        <tr><th nowrap>晚餐</th><td nowrap>日式迎賓會席料理+卡拉OK歡唱</td></tr>\
+                    </tbody>\
+                </table>',
+        html: true,
+        trigger: 'focus'
+    }).on('click', function(e){
         e.preventDefault();
         return false;
     });
 
-	$('#aMealsDay5').popover({
-		content:'<table class="table table-condensed table-bordered table-hover" style="margin-bottom: 0px">\
-					<tbody>\
-						<tr><th nowrap>早餐</th><td nowrap>飯店內享用</td></tr>\
-						<tr><th nowrap>午餐</th><td nowrap>自理</td></tr>\
-						<tr><th nowrap>晚餐</th><td nowrap>機上套餐</td></tr>\
-					</tbody>\
-				</table>',
-		html: true,
-		trigger: 'focus'
-	}).on('click', function(e){
+    $('#aMealsDay5').popover({
+        content:'<table class="table table-condensed table-bordered table-hover" style="margin-bottom: 0px">\
+                    <tbody>\
+                        <tr><th nowrap>早餐</th><td nowrap>飯店內享用</td></tr>\
+                        <tr><th nowrap>午餐</th><td nowrap>自理</td></tr>\
+                        <tr><th nowrap>晚餐</th><td nowrap>機上套餐</td></tr>\
+                    </tbody>\
+                </table>',
+        html: true,
+        trigger: 'focus'
+    }).on('click', function(e){
         e.preventDefault();
         return false;
     });
