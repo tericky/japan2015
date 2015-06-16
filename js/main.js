@@ -2,6 +2,8 @@
 var __map;
 // Weather
 var __weather;
+// Current Position
+var _currentPosition;
 
 //// -------------------- 第一天-------------------- ////
 //// 飯店
@@ -486,13 +488,14 @@ function mapInitialize() {
                .attr('href', 'mailto:tericky@gis.tw?Subject=我想要加入XXX景點、XXX商店')
                .attr('data-toggle', 'tooltip')
                .attr('data-placement', 'left')
-               .css('marginTop', '11px')
+               //.css('margin-top', '11px')
                .addClass('btn btn-danger btn-circle btn-lg')
                .append($('<i class="fa fa-envelope">'))
                .tooltip();
     mailLink.index = 2;
     __map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(mailLink);
 
+/*
     var weatherBtn = document.createElement('button');
     $(weatherBtn).attr('alt', '顯示/隱藏 天氣資訊')
                  .attr('title', '顯示/隱藏 天氣資訊')
@@ -506,6 +509,40 @@ function mapInitialize() {
                  .tooltip();
     weatherBtn.index = 3;
     __map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(weatherBtn);
+*/
+    var currentLocationBtn = document.createElement('button');
+    $(currentLocationBtn).attr('alt', '顯示/隱藏 天氣資訊')
+                 .attr('title', '顯示/隱藏 天氣資訊')
+                 .attr('data-toggle', 'tooltip')
+                 .attr('data-placement', 'left')
+                 .css('margin-bottom', '11px')
+                 .addClass('btn btn-success btn-circle btn-lg')
+                 .append($('<i class="fa fa-dot-circle-o">'))
+                 .on('click', function() {
+                    if(navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(
+                            function(position) {
+                                var pos = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+
+                                __map.setCenter(pos);
+
+                                _currentPosition = new google.maps.Marker({
+                                    position: pos,
+                                    map: __map,
+                                    icon: 'images/cl.png'
+                                });
+                            }, 
+                            function() {
+                                handleNoGeolocation(true);
+                            }
+                        );
+                    } else {
+                        handleNoGeolocation(false);
+                    }
+                 })
+                 .tooltip();
+    currentLocationBtn.index = 4;
+    __map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(currentLocationBtn);
 
     initailMarkerDay1();
     initailMarkerDay2();
@@ -516,6 +553,15 @@ function mapInitialize() {
     initialStores();
     initialMeals();
 }
+
+function handleNoGeolocation(errorFlag) {
+    if (errorFlag) {
+        alert('Error: The Geolocation service failed.');
+    } else {
+        alert('Error: Your browser doesn\'t support geolocation.');
+    }
+}
+
 
 function makeInfoWindowContent(opt) {
     if( opt === null || opt === undefined ) {
